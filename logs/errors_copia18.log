@@ -1,0 +1,10 @@
+ERROR File not found
+ERROR Null pointer exception
+ERROR Memory allocation failed
+ERROR Timeout waiting for response
+ERROR Invalid request payload
+ERROR Failed to connect to service
+ERROR User authentication timeout
+ERROR Permission denied
+ERROR Database connection lost
+ERROR Internal server error
