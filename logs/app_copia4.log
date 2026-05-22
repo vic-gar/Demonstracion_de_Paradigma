@@ -1,0 +1,13 @@
+INFO Application started
+INFO Loading configuration
+INFO Connecting to database
+ERROR Database timeout
+WARNING High memory usage
+INFO Retrying connection
+INFO Connection established
+ERROR Failed to fetch user profile
+INFO Cache initialized
+WARNING Disk usage at 85%
+INFO Scheduled task started
+ERROR API response timeout
+INFO Shutdown sequence initiated
