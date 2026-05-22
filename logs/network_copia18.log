@@ -1,0 +1,10 @@
+INFO Network interface initialized
+INFO Ping to gateway successful
+WARNING Packet loss detected
+ERROR Connection timeout to 172.16.0.5
+INFO DNS lookup successful
+WARNING High latency detected
+ERROR Failed to resolve hostname
+INFO VPN tunnel established
+ERROR Packet corruption detected
+INFO Network monitoring active
