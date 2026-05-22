@@ -34,10 +34,10 @@ estadisticas = {
 def resolver_patron(entrada_usuario):
     if entrada_usuario.lower() in PATRONES_PREDEFINIDOS:
         patron = PATRONES_PREDEFINIDOS[entrada_usuario.lower()]
-        print(f"  patrón  : {entrada_usuario} (predefinido)")
+        print(f"patrón: {entrada_usuario} (predefinido)")
     else:
         patron = rf".*{re.escape(entrada_usuario)}.*"
-        print(f"  patrón  : '{entrada_usuario}' ")
+        print(f"patrón: '{entrada_usuario}' ")
     return patron
 
 
@@ -54,7 +54,7 @@ def procesar_archivo(ruta_archivo, regex, id_worker):
         with open(ruta_archivo, "r", encoding="utf-8", errors="ignore") as archivo:
             for numero_linea, linea in enumerate(archivo, start=1):
                 if regex.search(linea):
-                    resultado = f"  {ruta_archivo}:{numero_linea}  {linea.strip()}"
+                    resultado = f"{ruta_archivo}:{numero_linea} {linea.strip()}"
                     with bloqueo_resultados:
                         resultados.append(resultado)
                         estadisticas["coincidencias_encontradas"] += 1
