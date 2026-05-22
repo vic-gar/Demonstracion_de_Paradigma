@@ -95,6 +95,31 @@ obteniendo resultados correctos en los archivos procesados.
 
 <img width="440" height="117" alt="image" src="https://github.com/user-attachments/assets/18fa8486-4058-448d-adda-8431d2eb1d28" />
 
+Para ejecutar el sistema no se requieren librerías externas, ya que todas las que utiliza vienen incluidas en la instalación estándar de Python. Para correrlo, desde la terminal hay que ubicarse en la carpeta del proyecto y ejecutar el siguiente comando:
+
+```
+python grep.py <patrón> [directorio]
+```
+
+En donde el parámetro <patrón> es obligatorio e indica qué se quiere buscar, el parámetro [directorio] es opcional, si no se especifica, el sistema buscará por defecto en la carpeta ./logs.
+
+Algunos ejemplos de uso con los patrones predefinidos:
+
+```
+python grep.py errores
+python grep.py timeouts ./mis_logs
+python grep.py ips
+```
+
+También se puede ingresar una expresión regular personalizada directamente:
+
+```
+python grep.py "ERROR.*timeout" ./logs
+```
+
+Los patrones predefinidos disponibles son: errores, advertencias, ips, timeouts, seguridad y correos.
+
+
 # Pruebas de concurrencia
 
 Para medir el impacto real de la concurrencia, se comparó el tiempo de ejecución entre una versión secuencial y la implementación concurrente usando cientos de archivos de logs duplicados.
