@@ -172,9 +172,7 @@ La solución concurrente, en cambio, aprovecha mejor los recursos del sistema y 
 
 # Conclusiones
 
-Este proyecto permitió demostrar de forma práctica cómo la programación concurrente puede mejorar el rendimiento de una herramienta de procesamiento masivo de texto.
-
-La combinación de workers concurrentes, colas compartidas y expresiones regulares dinámicas resultó en una herramienta funcional, eficiente y flexible para el análisis de logs, además, la arquitectura implementada refleja conceptos reales utilizados en herramientas de monitoreo, observabilidad y seguridad, lo que acerca el proyecto a aplicaciones de uso profesional.
+Este proyecto permitió demostrar de forma práctica cómo la programación concurrente puede mejorar el rendimiento de una herramienta de procesamiento masivo de texto, como vimos en la comparación de las complejidades de tiempo en ambos casos, del secuencial y concurrente. La combinación de workers concurrentes, colas compartidas y expresiones regulares dinámicas resultó en una herramienta funcional, eficiente y flexible para el análisis de logs. 
 
 
 # Referencias
