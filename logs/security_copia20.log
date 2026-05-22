@@ -1,0 +1,10 @@
+INFO Security scan started
+WARNING Multiple failed login attempts
+ERROR Unauthorized access detected
+INFO Firewall rules updated
+WARNING Suspicious IP detected: 45.33.21.90
+ERROR SQL injection attempt blocked
+INFO User admin logged in
+WARNING Too many requests from 10.0.0.15
+ERROR Brute force attack suspected
+INFO Security scan completed

@@ -1,0 +1,13 @@
+INFO Server online
+INFO Listening on port 8080
+INFO Client connected: 192.168.1.10
+ERROR Authentication failed
+WARNING Invalid token received
+INFO Client disconnected
+INFO Client connected: 192.168.1.11
+ERROR Session expired unexpectedly
+INFO Reconnecting services
+WARNING CPU temperature high
+INFO Background jobs completed
+ERROR Unable to write logs
+INFO Server shutdown
