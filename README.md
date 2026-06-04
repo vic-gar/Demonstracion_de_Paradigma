@@ -44,7 +44,9 @@ La arquitectura implementada sigue el patrón Producer–Consumer. En este model
 
 En esta arquitectura, el escáner de archivos es el productor, y los workers son los consumidores, cada worker obtiene un archivo de la cola, aplica la expresión regular y almacena los resultados encontrados.
 
-Para evitar conflictos cuando varios threads modifican al mismo tiempo las estadísticas o la lista de resultados, el sistema utiliza `threading.Lock()` como mecanismo de sincronización.
+Para evitar conflictos cuando varios threads modifican al mismo tiempo las estadísticas o la lista de resultados, el sistema utiliza `threading.Lock()` como mecanismo de sincronización. La arquitectura se representa gráficamente de la siguiente forma: 
+
+<img width="1003" height="1080" alt="Usuario ingresa patrón" src="https://github.com/user-attachments/assets/5b5d8883-8bea-4db0-a479-8bd3bf2326de" />
 
 
 # Implementación
