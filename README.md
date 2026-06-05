@@ -148,7 +148,8 @@ Concurrente:
 
 Secuencial:
 
-<img width="443" height="129" alt="image" src="https://github.com/user-attachments/assets/53aee789-b7e8-4315-9dd0-1f0f8fd5ee9d" />
+<img width="435" height="114" alt="image" src="https://github.com/user-attachments/assets/780bc1da-2b1b-467f-a415-6bae107da8b6" />
+
 
 
 Con este volumen de datos la diferencia de tiempo es notoria.
