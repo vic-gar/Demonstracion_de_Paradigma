@@ -143,13 +143,12 @@ Los resultados obtenidos al buscar errores fueron los siguientes:
 
 Concurrente: 
 
-<img width="438" height="119" alt="image" src="https://github.com/user-attachments/assets/7c6fa456-b815-4191-9b5f-a71e324488dc" />
+<img width="435" height="114" alt="image" src="https://github.com/user-attachments/assets/780bc1da-2b1b-467f-a415-6bae107da8b6" />
 
 
 Secuencial:
 
-<img width="435" height="114" alt="image" src="https://github.com/user-attachments/assets/780bc1da-2b1b-467f-a415-6bae107da8b6" />
-
+<img width="438" height="119" alt="image" src="https://github.com/user-attachments/assets/7c6fa456-b815-4191-9b5f-a71e324488dc" />
 
 
 Con este volumen de datos la diferencia de tiempo es notoria.
