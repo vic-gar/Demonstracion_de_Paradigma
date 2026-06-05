@@ -5,9 +5,9 @@
 import os
 import random
 
-DIRECTORIO_SALIDA   = "./logs_benchmark"
-NUM_ARCHIVOS        = 800
-LINEAS_POR_ARCHIVO  = 300
+DIRECTORIO_SALIDA = "./logs_benchmark"
+NUM_ARCHIVOS = 800
+LINEAS_POR_ARCHIVO = 300
 
 LINEAS_MUESTRA = [
     "INFO Iniciando servicio en 192.168.1.10",
