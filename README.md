@@ -126,19 +126,20 @@ python grep.py "ERROR.*timeout" ./logs
 
 Los patrones predefinidos disponibles son: errores, advertencias, ips, timeouts, seguridad y correos.
 
+Si se desea probar el sistema con el benchmark incluido, primero se deben generar los archivos de prueba ejecutando:
+
+​```
+python generar_logs.py
+​```
+
+Esto creará la carpeta `./logs_benchmark` con 800 archivos listos para usar.
+
 
 # Pruebas de concurrencia
 
-Para medir el impacto real de la concurrencia, se comparó el tiempo de ejecución entre una versión secuencial (1 trabajador) y la implementación concurrente usando 800 archivos de logs con 300 líneas cada uno (240,000 líneas en total). Los archivos se generaron con el script generar_logs.py incluido en el proyecto.
+Para medir el impacto real de la concurrencia, se comparó el tiempo de ejecución entre una versión secuencial (1 trabajador) y la implementación concurrente usando 800 archivos de logs con 300 líneas cada uno (240,000 líneas en total), generados con el script `generar_logs.py`. Para cambiar entre ambas versiones basta con modificar el valor de `NUM_TRABAJADORES` entre `1` y `4` en el archivo `grep.py`.
 
-Para reproducir el benchmark:
-
-```
-python generar_logs.py
-python grep.py errores ./logs_benchmark   # cambiar NUM_TRABAJADORES entre 1 y 4
-```
-
-Los resultados fueron los siguientes al buscar los errores en los logs:
+Los resultados obtenidos al buscar errores fueron los siguientes:
 
 Concurrente: 
 
@@ -150,7 +151,7 @@ Secuencial:
 <img width="443" height="129" alt="image" src="https://github.com/user-attachments/assets/53aee789-b7e8-4315-9dd0-1f0f8fd5ee9d" />
 
 
-Con este volumen de datos la diferencia de tiempo es notoria. Con conjuntos pequeños (menos de 100 archivos de pocas líneas) el beneficio no es visible porque el overhead de crear y sincronizar hilos supera al tiempo de procesamiento real, el punto de cruce donde la concurrencia empieza a ganar ocurre aproximadamente a partir de los 500 archivos con más de 100 líneas cada uno.
+Con este volumen de datos la diferencia de tiempo es notoria.
 
 
 # Análisis
