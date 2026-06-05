@@ -51,7 +51,7 @@ cola de inmediato, distribuyendo la carga de forma natural sin necesidad de repa
 
 Para evitar conflictos cuando varios threads modifican al mismo tiempo las estadísticas o la lista de resultados, el sistema utiliza `threading.Lock()` encapsulado dentro de ContextoBusqueda.  La arquitectura se representa gráficamente de la siguiente forma: 
 
-<img width="703" height="780" alt="Usuario ingresa patrón" src="https://github.com/user-attachments/assets/5b5d8883-8bea-4db0-a479-8bd3bf2326de" />
+<img width="603" height="680" alt="Usuario ingresa patrón" src="https://github.com/user-attachments/assets/5b5d8883-8bea-4db0-a479-8bd3bf2326de" />
 
 
 # Implementación
