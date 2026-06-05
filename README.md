@@ -90,6 +90,7 @@ En las pruebas funcionales se comprobó que las expresiones regulares detectaran
 
 <img width="460" height="127" alt="image" src="https://github.com/user-attachments/assets/45844de5-f5fa-44da-8a07-526fee655097" />
 
+
 También se probó la detección de direcciones IP con el patrón:
 
 ```regex
@@ -98,9 +99,11 @@ También se probó la detección de direcciones IP con el patrón:
 
 obteniendo resultados correctos en los archivos procesados.
 
+
 <img width="435" height="198" alt="image" src="https://github.com/user-attachments/assets/8eb356e1-ccfa-4709-b442-428fded67e46" />
 
 <img width="440" height="117" alt="image" src="https://github.com/user-attachments/assets/18fa8486-4058-448d-adda-8431d2eb1d28" />
+
 
 Para ejecutar el sistema no se requieren librerías externas, ya que todas las que utiliza vienen incluidas en la instalación estándar de Python. Para correrlo, desde la terminal hay que ubicarse en la carpeta del proyecto y ejecutar el siguiente comando:
 
@@ -146,9 +149,11 @@ Concurrente:
 <img width="435" height="114" alt="image" src="https://github.com/user-attachments/assets/780bc1da-2b1b-467f-a415-6bae107da8b6" />
 
 
+
 Secuencial:
 
 <img width="438" height="119" alt="image" src="https://github.com/user-attachments/assets/7c6fa456-b815-4191-9b5f-a71e324488dc" />
+
 
 
 Con este volumen de datos la diferencia de tiempo es notoria.
