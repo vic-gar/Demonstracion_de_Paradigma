@@ -52,7 +52,7 @@ cola de inmediato, distribuyendo la carga de forma natural sin necesidad de repa
 Para evitar conflictos cuando varios threads modifican al mismo tiempo las estadísticas o la lista de resultados, el sistema utiliza `threading.Lock()` encapsulado dentro de ContextoBusqueda.  La arquitectura se representa gráficamente de la siguiente forma: 
 
 <img width="603" height="680" alt="Usuario ingresa patrón" src="https://github.com/user-attachments/assets/5b5d8883-8bea-4db0-a479-8bd3bf2326de" />
-
+<br><br>
 
 # Implementación
 
@@ -89,7 +89,7 @@ En las pruebas funcionales se comprobó que las expresiones regulares detectaran
 <img width="449" height="228" alt="image" src="https://github.com/user-attachments/assets/60225eef-79cb-415a-a878-2554d2ab851d" />
 
 <img width="460" height="127" alt="image" src="https://github.com/user-attachments/assets/45844de5-f5fa-44da-8a07-526fee655097" />
-
+<br><br>
 
 También se probó la detección de direcciones IP con el patrón:
 
@@ -103,7 +103,7 @@ obteniendo resultados correctos en los archivos procesados.
 <img width="435" height="198" alt="image" src="https://github.com/user-attachments/assets/8eb356e1-ccfa-4709-b442-428fded67e46" />
 
 <img width="440" height="117" alt="image" src="https://github.com/user-attachments/assets/18fa8486-4058-448d-adda-8431d2eb1d28" />
-
+<br><br>
 
 Para ejecutar el sistema no se requieren librerías externas, ya que todas las que utiliza vienen incluidas en la instalación estándar de Python. Para correrlo, desde la terminal hay que ubicarse en la carpeta del proyecto y ejecutar el siguiente comando:
 
@@ -147,16 +147,16 @@ Los resultados obtenidos al buscar errores fueron los siguientes:
 Concurrente: 
 
 <img width="435" height="114" alt="image" src="https://github.com/user-attachments/assets/780bc1da-2b1b-467f-a415-6bae107da8b6" />
-
+<br><br>
 
 
 Secuencial:
 
 <img width="438" height="119" alt="image" src="https://github.com/user-attachments/assets/7c6fa456-b815-4191-9b5f-a71e324488dc" />
+<br><br>
 
 
-
-Con este volumen de datos la diferencia de tiempo es notoria.
+Con este volumen de datos la diferencia de tiempo es notoria, utilizando 4 workers en lugar de solo 1 como es de la forma secuencial.
 
 
 # Análisis
