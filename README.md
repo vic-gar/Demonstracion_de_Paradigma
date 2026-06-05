@@ -143,7 +143,7 @@ Los resultados obtenidos al buscar errores fueron los siguientes:
 
 Concurrente: 
 
-<img width="446" height="121" alt="image" src="https://github.com/user-attachments/assets/63dc36d0-cba6-4719-82f9-8cbc5fb602d4" />
+<img width="438" height="119" alt="image" src="https://github.com/user-attachments/assets/7c6fa456-b815-4191-9b5f-a71e324488dc" />
 
 
 Secuencial:
