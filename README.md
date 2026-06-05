@@ -1,4 +1,4 @@
-# Demostración de Paradigma - Motor de búsqueda para archivos de logs
+# Demostración de Paradigma - Motor concurrente de búsqueda de patrones en logs mediante expresiones regulares
 
 # Descripción
 
