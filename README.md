@@ -174,11 +174,11 @@ O(n · m)
 
 ya que se recorre cada archivo y cada una de sus líneas de forma lineal.
 
-En la implementación concurrente con `p` workers, la complejidad ideal se aproxima a:
+En la implementación concurrente con `p` workers, el tiempo de ejecución ideal se aproxima a:
 
 O((n · m) / p)
 
-porque la carga se divide entre los threads que trabajan en paralelo.
+asumiendo una distribución uniforme de la carga entre p trabajadores y ausencia de sobrecostes de sincronización.
 
 La fórmula O((n·m)/p) asume condiciones perfectas que en la práctica no se cumplen. En Python, el GIL (Global Interpreter Lock) hace que solo un hilo pueda ejecutarse a la vez en operaciones de CPU. Por esta razón, el beneficio real de usar threading proviene de las operaciones de lectura de archivos, momento en el que el GIL se libera (Python Software Foundation, 2024, sección GIL and performance considerations).
 
@@ -188,7 +188,7 @@ Por todo esto, el speedup real está limitado por la fracción secuencial del pr
 S = 1 / ((1 - P ) + (P / N))
 ​```
 
-Donde `P` es la fracción del programa que puede ejecutarse en paralelo y `N` el número de trabajadores. Esto significa que si una parte del programa es obligatoriamente secuencial, como el escaneo del directorio o la escritura de resultados, el speedup nunca alcanza exactamente `N`, y su incremento se vuelve marginal conforme se agregan más trabajadores (GeeksForGeeks, 2026, párr. 8).
+Donde `P` representa la fracción paralelizable del programa y `N` el número de trabajadores. Esto significa que si una parte del programa es obligatoriamente secuencial, como el escaneo del directorio o la escritura de resultados, el speedup nunca alcanza exactamente `N`, y su incremento se vuelve marginal conforme se agregan más trabajadores (GeeksForGeeks, 2026, párr. 8).
 
 
 # Comparación con otro paradigma
